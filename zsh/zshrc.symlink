@@ -70,8 +70,8 @@ fi
 # RBENV
 eval "$(rbenv init -)"
 
-# Z Bootstrap
-eval "$(/Users/tmcinerney/Code/zendesk/z/bin/z init -)"
+# init z   https://github.com/rupa/z
+. ~/Code/personal/z/z.sh
 
 # Base16 Shell
 #BASE16_SCHEME="ocean"

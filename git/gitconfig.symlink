@@ -83,6 +83,7 @@
 [merge]
 	# Include summaries of merged commits in newly created merge commit messages
 	log = true
+	tool = kdiff3
 
 # URL shorthands
 [url "git@github.com:"]
@@ -118,3 +119,5 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[mergetool "kdiff3"]
+	path = /Applications/kdiff3.app/Contents/MacOS/kdiff3

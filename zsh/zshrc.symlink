@@ -9,9 +9,9 @@ alias tidy_git="git branch --merged | grep -v master | xargs git branch -d"
 alias update='git stash && git pull && bundle install && git stash pop && restart!'
 alias vim='mvim -v'
 alias watch='tail -f log/development.log'
+alias nody="node ~/Dropbox/Dev/server.js"
 
-export EDITOR='subl .'
-
+export EDITOR='vim .'
 
 # RUBY
 # ********************************************************

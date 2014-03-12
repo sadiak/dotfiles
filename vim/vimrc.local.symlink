@@ -1,0 +1,9 @@
+" This is totally awesome - remap jj to escape in insert mode.  You'll never type jj anyway, so it's great!
+inoremap jj <Esc>
+inoremap jjw <esc> :w!<cr>
+
+" Remove any trailing whitespace that is in the file
+autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
+
+" This shows what you are typing as a command.  I love this!
+set showcmd

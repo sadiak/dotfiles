@@ -15,3 +15,10 @@ autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
 
 " This shows what you are typing as a command.  I love this!
 set showcmd
+
+" Tab defaults
+set expandtab
+set tabstop=2
+set shiftwidth=2
+set autoindent
+set sts=2

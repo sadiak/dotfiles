@@ -10,6 +10,7 @@ alias update='git stash && git pull && bundle install && git stash pop && restar
 alias vim='mvim -v'
 alias watch='tail -f log/development.log'
 alias nody="node ~/Dropbox/Dev/server.js"
+alias nom='rm -rf node_modules && npm cache clear && npm i'
 
 export EDITOR='vim .'
 
@@ -23,7 +24,6 @@ alias sc='script/console'
 alias sg='script/generate'
 alias sd='script/destroy'
 alias migrate='rake db:migrate db:test:clone'
-
 
 # ZENDESK
 # ********************************************************
